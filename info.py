@@ -42,5 +42,4 @@ if __name__ == "__main__":
         statdir()
     else:
         print("      Please run info help")
-#        print("      bala         --BALA")
-#        print("      list        --list")
+
