@@ -14,12 +14,16 @@ def help():
     print("sys              --system")
     print("list             --ls -lah")
     print("man              --man")
+    print("statdir          --stat dir")
 def list():
     list_files = subprocess.run(["ls", "-l"])
     print("The exit code was: %d" % list_files.returncode)
 
 def man():
     os.system("x-terminal-emulator -b -noclose -e man x-terminal-emulator &")
+
+def statdir():
+    os.system("opt/info/statdir")
 
 
 
@@ -34,6 +38,8 @@ if __name__ == "__main__":
         list()
     elif opt == "man":
         man()
+    elif opt == "statdir":
+        statdir()
     else:
         print("      Please run info help")
 #        print("      bala         --BALA")
