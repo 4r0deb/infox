@@ -23,7 +23,7 @@ def man():
     os.system("x-terminal-emulator -b -noclose -e man x-terminal-emulator &")
 
 def statdir():
-    os.system("opt/info/statdir")
+    os.system("x-terminal-emulator -b -noclose -e man opt/info/statdir")
 
 
 
@@ -42,4 +42,5 @@ if __name__ == "__main__":
         statdir()
     else:
         print("      Please run info help")
-
+#        print("      bala         --BALA")
+#        print("      list        --list")
