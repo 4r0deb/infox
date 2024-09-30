@@ -23,7 +23,8 @@ def man():
     os.system("x-terminal-emulator -b -noclose -e man x-terminal-emulator &")
 
 def statdir():
-    os.system("x-terminal-emulator -b -noclose -e opt/info/statdir &")
+    os.system("opt/info/statdir")
+#
 
 
 
