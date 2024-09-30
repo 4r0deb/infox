@@ -14,7 +14,7 @@ def help():
     print("sys              --system")
     print("list             --ls -lah")
     print("man              --man")
-    print("statdir          --stat dir")
+    print("statdir          --stat dir/file permmision")
 def list():
     list_files = subprocess.run(["ls", "-l"])
     print("The exit code was: %d" % list_files.returncode)
@@ -23,7 +23,7 @@ def man():
     os.system("x-terminal-emulator -b -noclose -e man x-terminal-emulator &")
 
 def statdir():
-    os.system("opt/info/statdir")
+    os.system("echo 'Paste dir/file ';read dir ;stat -c '%a %A %n' $dir")
 #
 
 
