@@ -4,3 +4,5 @@
 
 ./info.py sys
 
+./info.py statdir
+
